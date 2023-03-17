@@ -30,7 +30,7 @@ class RenderWDG:
         def transform(xy):
             x, y = xy
             x2 = (x - x_min) / x_range * Style.WIDTH + Style.PADDING
-            y2 = (y - y_min) / y_range * Style.HEIGHT + Style.PADDING
+            y2 = (y_max - y) / y_range * Style.HEIGHT + Style.PADDING
             return x2, y2
 
         return transform
