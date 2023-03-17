@@ -1,12 +1,15 @@
 from dataclasses import dataclass
-from wdg.core.Node import Node
-from wdg.core.Edge import Edge
+
 from utils import JSONFile
+
+from wdg.core.Edge import Edge
+from wdg.core.Node import Node
+
+
 @dataclass
 class WDGraph:
     nodes: list[Node]
     edges: list[Edge]
-
 
     @staticmethod
     def load_from_file(path: str):
