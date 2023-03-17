@@ -13,19 +13,19 @@
     <text text-anchor="middle" alignment-baseline="middle" font-size="10" stroke="none" fill="black" font-family="sans-serif" x="420.17153952468783" y="218.80236115191047">120</text>
   </g>
   <g>
-    <circle r="32" stroke="gray" fill="lightgray" cx="100.0" cy="100.0"/>
+    <circle stroke="gray" fill="lightgray" cx="100.0" cy="100.0" r="65"/>
     <text text-anchor="middle" alignment-baseline="middle" font-size="10" stroke="none" fill="black" font-family="sans-serif" x="100.0" y="100.0">Pettah</text>
   </g>
   <g>
-    <circle r="32" stroke="gray" fill="lightgray" cx="900.0" cy="550.0"/>
+    <circle stroke="gray" fill="lightgray" cx="900.0" cy="550.0" r="10"/>
     <text text-anchor="middle" alignment-baseline="middle" font-size="10" stroke="none" fill="black" font-family="sans-serif" x="900.0" y="550.0">Matugama</text>
   </g>
   <g>
-    <circle r="32" stroke="gray" fill="lightgray" cx="273.58116105757745" cy="342.44944146279"/>
+    <circle stroke="gray" fill="lightgray" cx="273.58116105757745" cy="342.44944146279" r="25"/>
     <text text-anchor="middle" alignment-baseline="middle" font-size="10" stroke="none" fill="black" font-family="sans-serif" x="273.58116105757745" y="342.44944146279">Panadura</text>
   </g>
   <g>
-    <circle r="32" stroke="gray" fill="lightgray" cx="740.3430790493757" cy="337.60472230382095"/>
+    <circle stroke="gray" fill="lightgray" cx="740.3430790493757" cy="337.60472230382095" r="30"/>
     <text text-anchor="middle" alignment-baseline="middle" font-size="10" stroke="none" fill="black" font-family="sans-serif" x="740.3430790493757" y="337.60472230382095">Horana</text>
   </g>
 </svg>

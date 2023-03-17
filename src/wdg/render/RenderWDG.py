@@ -39,13 +39,24 @@ class RenderWDG:
     def node_idx(self):
         return {node.id: node for node in self.wdg.nodes}
 
+    @cache
+    def get_node_radius(self, id):
+        weight_sum = 0
+        for edge in self.wdg.edges:
+            if edge.source == id or edge.target == id:
+                weight_sum += edge.weight
+
+        radius = weight_sum
+        return radius
+
     def render_node(self, node):
         transform = self.get_transform()
         x, y = transform(node.xy)
+        r = self.get_node_radius(node.id)
         return _(
             'g',
             [
-                _('circle', None, Style.NODE_CIRCLE | dict(cx=x, cy=y)),
+                _('circle', None, Style.NODE_CIRCLE | dict(cx=x, cy=y, r=r)),
                 _('text', node.label, Style.NODE_TEXT | dict(x=x, y=y)),
             ],
         )

@@ -12,7 +12,6 @@ class Style:
     )
 
     NODE_CIRCLE = dict(
-        r=32,
         stroke='gray',
         fill='lightgray',
     )
