@@ -46,7 +46,7 @@ class RenderWDG:
             'g',
             [
                 _('circle', None, Style.NODE_CIRCLE | dict(cx=x, cy=y)),
-                _('text', node.label, Style.NODE_LABEL | dict(x=x, y=y)),
+                _('text', node.label, Style.NODE_TEXT | dict(x=x, y=y)),
             ],
         )
 
@@ -60,11 +60,30 @@ class RenderWDG:
         node2 = node_idx[edge.target]
         x1, y1 = transform(node1.xy)
         x2, y2 = transform(node2.xy)
+        x_mid = (x1 + x2) / 2
+        y_mid = (y1 + y2) / 2
+
         return _(
-            'line',
-            None,
-            Style.EDGE_LINE
-            | dict(x1=x1, y1=y1, x2=x2, y2=y2, stroke_width=edge.weight),
+            'g',
+            [
+                _(
+                    'line',
+                    None,
+                    Style.EDGE_LINE
+                    | dict(
+                        x1=x1, y1=y1, x2=x2, y2=y2, stroke_width=edge.weight
+                    ),
+                ),
+                _(
+                    'text',
+                    edge.label,
+                    Style.EDGE_TEXT
+                    | dict(
+                        x=x_mid,
+                        y=y_mid,
+                    ),
+                ),
+            ],
         )
 
     def render_edges(self):
