@@ -9,7 +9,6 @@ class TestWDG(unittest.TestCase):
 
         self.assertEqual(len(wdgraph.nodes), 3)
         self.assertEqual(wdgraph.nodes[0].id, '1')
-        self.assertEqual(wdgraph.nodes[0].label, 'Node 1')
         self.assertEqual(wdgraph.nodes[0].xy, [0, 0])
 
         self.assertEqual(len(wdgraph.edges), 3)

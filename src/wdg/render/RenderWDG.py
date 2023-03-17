@@ -57,7 +57,7 @@ class RenderWDG:
             'g',
             [
                 _('circle', None, Style.NODE_CIRCLE | dict(cx=x, cy=y, r=r)),
-                _('text', node.label, Style.NODE_TEXT | dict(x=x, y=y)),
+                _('text', node.id, Style.NODE_TEXT | dict(x=x, y=y)),
             ],
         )
 
@@ -87,7 +87,7 @@ class RenderWDG:
                 ),
                 _(
                     'text',
-                    edge.label,
+                    edge.id,
                     Style.EDGE_TEXT
                     | dict(
                         x=x_mid,

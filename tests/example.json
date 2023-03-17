@@ -2,39 +2,33 @@
     "nodes": [
         {
             "id": "1",
-            "label": "Node 1",
             "xy": [0, 0]
         },
         {
             "id": "2",
-            "label": "Node 2",
             "xy": [0, 1]
 
         },
         {
             "id": "3",
-            "label": "Node 3",
             "xy": [1, 0]
         }
     ],
     "edges": [
         {
             "id": "1-2",
-            "label": "Edge 1-2",
             "source": "1",
             "target": "2",
             "weight": 10
         },
         {
             "id": "2-3",
-            "label": "Edge 2-3",
             "source": "2",
             "target": "3",
             "weight": 25        
         },
         {
             "id": "3-1",
-            "label": "Edge 3-1",
             "source": "3",
             "target": "1",
             "weight": 30

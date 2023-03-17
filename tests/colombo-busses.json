@@ -2,44 +2,37 @@
     "nodes": [
         {
             "id": "Pettah",
-            "label": "Pettah",
             "xy": [79.85010716032893, 6.933918574625901]
         },
         {
             "id": "Matugama",
-            "label": "Matugama",
             "xy": [80.11436940426769,6.522952433018533]
 
         },
         {
             "id": "Panadura",
-            "label": "Panadura",
             "xy": [79.90744584423715,6.712499660197403]
         },
         {
             "id": "Horana",
-            "label": "Horana",
             "xy": [80.06163028402923,6.716924139175031]
         }
     ],
     "edges": [
         {
             "id": "430",
-            "label": "430",
             "source": "Pettah",
             "target": "Matugama",
             "weight": 10
         },
         {
             "id": "400",
-            "label": "400",
             "source": "Pettah",
             "target": "Panadura",
             "weight": 25        
         },
         {
             "id": "120",
-            "label": "120",
             "source": "Pettah",
             "target": "Horana",
             "weight": 30
