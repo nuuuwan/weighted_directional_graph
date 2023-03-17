@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650">
+  <line stroke="gray" fill="none" x1="100.0" y1="100.0" x2="100.0" y2="550.0" stroke-width="10"/>
+  <line stroke="gray" fill="none" x1="100.0" y1="550.0" x2="900.0" y2="100.0" stroke-width="25"/>
+  <line stroke="gray" fill="none" x1="900.0" y1="100.0" x2="100.0" y2="100.0" stroke-width="30"/>
+  <g>
+    <circle r="32" stroke="gray" fill="lightgray" cx="100.0" cy="100.0"/>
+    <text text-anchor="middle" alignment-baseline="middle" font-size="10" stroke="none" fill="black" font-family="sans-serif" x="100.0" y="100.0">Node 1</text>
+  </g>
+  <g>
+    <circle r="32" stroke="gray" fill="lightgray" cx="100.0" cy="550.0"/>
+    <text text-anchor="middle" alignment-baseline="middle" font-size="10" stroke="none" fill="black" font-family="sans-serif" x="100.0" y="550.0">Node 2</text>
+  </g>
+  <g>
+    <circle r="32" stroke="gray" fill="lightgray" cx="900.0" cy="100.0"/>
+    <text text-anchor="middle" alignment-baseline="middle" font-size="10" stroke="none" fill="black" font-family="sans-serif" x="900.0" y="100.0">Node 3</text>
+  </g>
+</svg>
